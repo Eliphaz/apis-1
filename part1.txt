@@ -20,3 +20,10 @@ https://swapi.dev/api/people/10
 https://swapi.dev/api/starships?search=falcon
 
 PART 2:
+
+POST takes a query which is exprected to be a id and a body which is exprected to contain the text for the new post
+
+array of post object
+
+practiceapi.devmountain.com/api/posts/555
+
