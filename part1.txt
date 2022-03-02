@@ -21,9 +21,22 @@ https://swapi.dev/api/starships?search=falcon
 
 PART 2:
 
-POST takes a query which is exprected to be a id and a body which is exprected to contain the text for the new post
+POST takes a body which is exprected to contain the text for the new post
 
 array of post object
 
 practiceapi.devmountain.com/api/posts/555
 
+200 => returns array of filtered posts 409 => request query is missing required text
+
+URL => https://practiceapi.devmountain.com/api/posts/ BODY => {"text": "Eli Ahlander"}
+
+URL => https://practiceapi.devmountain.com/api/posts?id=557 BODY => {"text": "orange"}
+
+https://practiceapi.devmountain.com/api/posts/filter?text=blue
+
+CONTENT TYPE => application/json CHARSET => utf-8
+
+request is missing body.text or query.id
+
+It ignores it and returns all the objects
